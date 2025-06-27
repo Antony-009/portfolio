@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonyraj Vedamanickam | Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#00ffaa',secondary:'#9900ff'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #0a0a0a;
+color: #ffffff;
+overflow-x: hidden;
+}
+@keyframes float {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-20px); }
+100% { transform: translateY(0px); }
+}
+@keyframes spin3D {
+0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+@keyframes spin3DReverse {
+0% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+100% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+}
+.perspective-1000 {
+perspective: 1000px;
+}
+.transform-style-3d {
+transform-style: preserve-3d;
+}
+.translate-z-8 {
+transform: translateZ(8px);
+}
+.translate-z-16 {
+transform: translateZ(16px);
+}
+.translate-z-24 {
+transform: translateZ(24px);
+}
+.translate-z-32 {
+transform: translateZ(32px);
+}
+.translate-z-40 {
+transform: translateZ(40px);
+}
+.translate-z-48 {
+transform: translateZ(48px);
+}
+.animate-spin-slow {
+animation: spin 20s linear infinite;
+}
+.animate-spin-reverse-slower {
+animation: spin 15s linear reverse infinite;
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+@keyframes shimmer {
+0% { background-position: -200% center; }
+100% { background-position: 200% center; }
+}
+@keyframes rotate {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+@keyframes slideIn {
+from { transform: translateX(-100%); opacity: 0; }
+to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeInUp {
+from { transform: translateY(20px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+.floating {
+animation: float 6s ease-in-out infinite;
+}
+.pulsing {
+animation: pulse 2s ease-in-out infinite;
+}
+.shimmer-effect {
+background: linear-gradient(90deg, transparent, rgba(0, 255, 170, 0.2), transparent);
+background-size: 200% 100%;
+animation: shimmer 3s infinite;
+}
+.rotate-icon {
+animation: rotate 10s linear infinite;
+}
+.slide-in {
+animation: slideIn 1s ease-out forwards;
+}
+.fade-up {
+animation: fadeInUp 0.6s ease-out forwards;
+opacity: 0;
+}
+.gradient-text {
+background: linear-gradient(45deg, #00ffaa, #9900ff);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: shimmer 3s infinite;
+}
+.skill-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0, 255, 170, 0.2);
+}
+.social-icon {
+transition: all 0.3s ease;
+}
+.social-icon:hover {
+transform: translateY(-5px) scale(1.1);
+}
+.project-card {
+transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover {
+transform: translateY(-15px) scale(1.02);
+box-shadow: 0 20px 30px rgba(0, 255, 170, 0.3);
+}
+.glow-on-hover {
+position: relative;
+overflow: hidden;
+}
+.glow-on-hover:after {
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: radial-gradient(circle, rgba(0, 255, 170, 0.1) 0%, transparent 70%);
+opacity: 0;
+transition: opacity 0.3s ease;
+pointer-events: none;
+}
+.glow-on-hover:hover:after {
+opacity: 1;
+}
+.orbitron {
+font-family: 'Orbitron', sans-serif;
+}
+.neon-text {
+text-shadow: 0 0 5px rgba(0, 255, 170, 0.5), 0 0 10px rgba(0, 255, 170, 0.3), 0 0 15px rgba(0, 255, 170, 0.2);
+}
+.neon-text-purple {
+text-shadow: 0 0 5px rgba(153, 0, 255, 0.5), 0 0 10px rgba(153, 0, 255, 0.3), 0 0 15px rgba(153, 0, 255, 0.2);
+}
+.neon-border {
+box-shadow: 0 0 5px rgba(0, 255, 170, 0.5), 0 0 10px rgba(0, 255, 170, 0.3);
+}
+.neon-border-purple {
+box-shadow: 0 0 5px rgba(153, 0, 255, 0.5), 0 0 10px rgba(153, 0, 255, 0.3);
+}
+.binary-bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.1;
+}
+.glow-button {
+position: relative;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.glow-button:before {
+content: '';
+position: absolute;
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: -2px;
+z-index: -1;
+background: linear-gradient(45deg, #00ffaa, #9900ff, #00ffaa, #9900ff);
+background-size: 400%;
+border-radius: 10px;
+animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+0% { background-position: 0 0; }
+50% { background-position: 400% 0; }
+100% { background-position: 0 0; }
+}
+.skill-bar {
+height: 4px;
+background: rgba(255, 255, 255, 0.1);
+position: relative;
+overflow: hidden;
+}
+.skill-progress {
+height: 100%;
+background: linear-gradient(90deg, #00ffaa, #9900ff);
+position: absolute;
+top: 0;
+left: 0;
+animation: skill-fill 2s ease-out forwards;
+}
+@keyframes skill-fill {
+from { width: 0; }
+}
+.card-3d {
+transform-style: preserve-3d;
+transition: transform 0.5s ease;
+}
+.card-3d:hover {
+transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+.project-card {
+background: rgba(10, 10, 10, 0.8);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(0, 255, 170, 0.2);
+transition: all 0.3s ease;
+}
+.project-card:hover {
+border-color: #00ffaa;
+box-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+}
+.network-canvas {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -2;
+}
+#scene-container {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+z-index: -1;
+overflow: hidden;
+}
+.scroll-indicator {
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+40% { transform: translateY(-20px); }
+60% { transform: translateY(-10px); }
+}
+.nav-item {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-item:after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #00ffaa;
+transition: width 0.3s ease;
+}
+.nav-item:hover:after {
+width: 100%;
+}
+input, textarea {
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(0, 255, 170, 0.2);
+color: white;
+transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+border-color: #00ffaa;
+box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+outline: none;
+}
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(#00ffaa, #9900ff);
+border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<header class="fixed top-0 left-0 w-full z-50 bg-opacity-10 bg-black backdrop-blur-md border-b border-primary border-opacity-20">
+<div class="container mx-auto px-6 py-4">
+<div class="flex justify-between items-center">
+<div class="text-primary orbitron text-2xl font-bold neon-text">AV</div>
+<nav class="hidden md:flex space-x-8">
+<a href="#home" class="nav-item text-white hover:text-primary">Home</a>
+<a href="#about" class="nav-item text-white hover:text-primary">About</a>
+<a href="#skills" class="nav-item text-white hover:text-primary">Skills</a>
+<a href="#projects" class="nav-item text-white hover:text-primary">Projects</a>
+<a href="#contact" class="nav-item text-white hover:text-primary">Contact</a>
+</nav>
+<button class="md:hidden text-white w-10 h-10 flex items-center justify-center" id="menu-toggle">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95 backdrop-blur-md">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#home" class="text-white hover:text-primary py-2">Home</a>
+<a href="#about" class="text-white hover:text-primary py-2">About</a>
+<a href="#skills" class="text-white hover:text-primary py-2">Skills</a>
+<a href="#projects" class="text-white hover:text-primary py-2">Projects</a>
+<a href="#contact" class="text-white hover:text-primary py-2">Contact</a>
+</div>
+</div>
+</header>
+<main>
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
+<div class="container mx-auto px-6 py-20 relative z-10">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-bold mb-6 orbitron">
+    <span class="block">Hi, I'm</span>
+    <span class="text-primary neon-text">ANTONYRAJ</span>
+    <span class="block">VEDAMANICKAM</span>
+    </h1>
+<div class="flex mt-4">
+<span class="text-[#ff00ff] mr-4" style="font-family: 'Orbitron', sans-serif;">Full Stack</span>
+<span class="text-[#ffff00]" style="font-family: 'Orbitron', sans-serif;">& Cybersecurity </span>
+</div>
+</h1>
+<p class="text-lg text-gray-300 mb-8">Creating innovative solutions with cutting-edge technology. Specializing in AI, data visualization, and network security.</p>
+<div class="flex space-x-4">
+<a href="#contact" class="glow-button px-8 py-3 !rounded-button font-medium whitespace-nowrap" style="background: #00ffaa; color: #000; font-family: 'Orbitron', sans-serif; box-shadow: 0 0 10px #00ffff;">Contact Me</a>
+<a href="#projects" class="px-8 py-3 !rounded-button font-medium whitespace-nowrap" style="border: 2px solid #00ffaa; color: #00ffaa; font-family: 'Orbitron', sans-serif;">View Projects</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center perspective-1000">
+<div class="relative w-[400px] h-[400px] transform-style-3d animate-float">
+<div class="absolute inset-0 transform translate-z-32" style="border: 2px solid #00ffff; border-radius: 50%; transform-style: preserve-3d; animation: spin3D 20s linear infinite;"></div>
+<div class="absolute inset-[40px] transform translate-z-24" style="border: 2px solid #00ffff; border-radius: 50%; transform-style: preserve-3d; animation: spin3DReverse 15s linear infinite;"></div>
+<div class="absolute inset-[80px] transform translate-z-16" style="border: 2px solid #00ffff; border-radius: 50%; transform-style: preserve-3d;"></div>
+<div class="absolute transform translate-z-48" style="width: 12px; height: 12px; background: #00ffff; border-radius: 50%; top: 50%; left: 10%; transform: translate3d(-50%, -50%, 48px); box-shadow: 0 0 20px #00ffff;"></div>
+<div class="absolute transform translate-z-48" style="width: 12px; height: 12px; background: #00ffff; border-radius: 50%; top: 20%; right: 20%; transform: translate3d(-50%, -50%, 48px); box-shadow: 0 0 20px #00ffff;"></div>
+<div class="absolute transform translate-z-48" style="width: 12px; height: 12px; background: #00ffff; border-radius: 50%; bottom: 30%; right: 10%; transform: translate3d(-50%, -50%, 48px); box-shadow: 0 0 20px #00ffff;"></div>
+<div class="absolute text-[#00ffff] text-sm transform translate-z-40" style="top: 30%; left: 20%; font-family: monospace; text-shadow: 0 0 10px #00ffff;">01001</div>
+<div class="absolute text-[#00ffff] text-sm transform translate-z-40" style="bottom: 40%; right: 25%; font-family: monospace; text-shadow: 0 0 10px #00ffff;">10110</div>
+<div class="absolute inset-0 transform translate-z-8">
+  <div class="w-full h-full relative">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="w-[300px] h-[300px] border-2 border-[#00ffaa40] rounded-full animate-pulse"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="w-[200px] h-[200px] border-2 border-[#00ffaa30] rounded-full" style="animation: spin 10s linear infinite"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="w-[100px] h-[100px] border-2 border-[#00ffaa20] rounded-full" style="animation: spin 5s linear infinite reverse"></div>
+    </div>
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div class="w-4 h-4 bg-primary rounded-full animate-ping"></div>
+    </div>
+    <div class="absolute inset-0">
+      <svg class="w-full h-full" viewBox="0 0 400 400">
+        <line x1="200" y1="50" x2="300" y2="200" stroke="#00ffaa20" stroke-width="2">
+          <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" repeatCount="indefinite" />
+        </line>
+        <line x1="200" y1="50" x2="100" y2="200" stroke="#00ffaa20" stroke-width="2">
+          <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
+        </line>
+        <line x1="200" y1="350" x2="300" y2="200" stroke="#00ffaa20" stroke-width="2">
+          <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2.5s" repeatCount="indefinite" />
+        </line>
+        <line x1="200" y1="350" x2="100" y2="200" stroke="#00ffaa20" stroke-width="2">
+          <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3.5s" repeatCount="indefinite" />
+        </line>
+      </svg>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-[#00ffff] scroll-indicator">
+<div class="flex flex-col items-center">
+<span class="text-sm mb-2">Scroll Down</span>
+<i class="ri-arrow-down-line ri-lg"></i>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 relative">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 orbitron">About <span class="text-primary neon-text">Me</span></h2>
+<div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<div class="relative">
+<div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-lg opacity-20 blur-lg"></div>
+<div class="relative bg-black bg-opacity-80 backdrop-blur-sm p-6 rounded-lg border border-primary border-opacity-20">
+<h3 class="text-2xl font-bold mb-4 orbitron">Career <span class="text-primary">Objective</span></h3>
+<p class="text-gray-300 mb-6">Highly motivated and detail-oriented individual with a strong foundation in programming and a passion for software development.</p>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<p>Skilled in JavaScript, React, Node.js, and SQL, with hands-on experience as a Full Stack Web Developer.</p>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<p>Demonstrates strong problem-solving skills and a commitment to building innovative and efficient web solutions.</p>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<p>Experienced as a Cybersecurity Intern with knowledge in network security, threat analysis, and vulnerability assessment.</p>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<p>Eager to contribute to dynamic teams and grow professionally in a forward-thinking organization.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-4 orbitron">Personal <span class="text-primary">Info</span></h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-phone-line"></i>
+</div>
+<div>
+<p class="text-sm text-gray-400">Phone</p>
+<p>+91 9321779172</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-mail-line"></i>
+</div>
+<div>
+<p class="text-sm text-gray-400">Email</p>
+<p>antony958570@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-linkedin-line"></i>
+</div>
+<div>
+<p class="text-sm text-gray-400">LinkedIn</p>
+<p>antony-raj-8b42b3254</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-github-line"></i>
+</div>
+<div>
+<p class="text-sm text-gray-400">GitHub</p>
+<p>Antony-009</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 orbitron">Other <span class="text-primary">Achievements</span></h3>
+<div class="space-y-4">
+<div class="bg-black bg-opacity-50 backdrop-blur-sm p-4 rounded-lg border border-primary border-opacity-20">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-award-line"></i>
+</div>
+<p>District Level Volleyball Player</p>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 backdrop-blur-sm p-4 rounded-lg border border-primary border-opacity-20">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-3">
+<i class="ri-award-line"></i>
+</div>
+<p>State Level Kabaddi Player</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="py-20 relative bg-black bg-opacity-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-up">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 orbitron floating">Technical <span class="text-primary neon-text shimmer-effect">Skills</span></h2>
+<div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto pulsing"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-black bg-opacity-70 backdrop-blur-sm p-8 rounded-lg border border-primary border-opacity-20 hover:border-opacity-40 transition-all skill-card fade-up">
+<h3 class="text-xl font-bold mb-8 orbitron flex items-center">
+<i class="ri-code-line text-primary text-2xl mr-3"></i>
+Programming <span class="text-primary ml-2">Languages</span>
+</h3>
+<div class="space-y-8">
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-code-s-slash-line text-primary mr-2"></i>
+<span class="font-medium">C/C++</span>
+</div>
+<span class="text-primary font-bold">85%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 85%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-python-line text-primary mr-2"></i>
+<span class="font-medium">Python</span>
+</div>
+<span class="text-primary font-bold">90%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 90%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-code-box-line text-primary mr-2"></i>
+<span class="font-medium">Java</span>
+</div>
+<span class="text-primary font-bold">75%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 75%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-javascript-line text-primary mr-2"></i>
+<span class="font-medium">JavaScript</span>
+</div>
+<span class="text-primary font-bold">92%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 92%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-black bg-opacity-70 backdrop-blur-sm p-8 rounded-lg border border-primary border-opacity-20 hover:border-opacity-40 transition-all skill-card fade-up">
+<h3 class="text-xl font-bold mb-8 orbitron flex items-center">
+<i class="ri-window-line text-primary text-2xl mr-3"></i>
+Web <span class="text-primary ml-2">Development</span>
+</h3>
+<div class="space-y-8">
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-html5-line text-primary mr-2"></i>
+<span class="font-medium">HTML/CSS</span>
+</div>
+<span class="text-primary font-bold">95%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 95%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-reactjs-line text-primary mr-2"></i>
+<span class="font-medium">React</span>
+</div>
+<span class="text-primary font-bold">88%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 88%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-nextjs-line text-primary mr-2"></i>
+<span class="font-medium">Next.js</span>
+</div>
+<span class="text-primary font-bold">85%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 85%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="transform hover:scale-105 transition-all">
+<div class="flex justify-between mb-3">
+<div class="flex items-center">
+<i class="ri-flutter-line text-primary mr-2"></i>
+<span class="font-medium">Flutter</span>
+</div>
+<span class="text-primary font-bold">80%</span>
+</div>
+<div class="relative h-3 bg-black bg-opacity-50 rounded-full overflow-hidden border border-primary border-opacity-20">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 80%">
+<div class="absolute top-0 right-0 h-full w-2 bg-white opacity-30 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h3 class="text-xl font-bold mb-6 text-center orbitron">Other <span class="text-primary">Skills</span></h3>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-git-branch-line"></i>
+</div>
+<span>Git</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-database-2-line"></i>
+</div>
+<span>SQL</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-global-line"></i>
+</div>
+<span>Networking</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-computer-line"></i>
+</div>
+<span>Operating Systems</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-team-line"></i>
+</div>
+<span>Teamwork</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-user-voice-line"></i>
+</div>
+<span>Communication</span>
+</div>
+</div>
+<div class="bg-black bg-opacity-50 border border-primary border-opacity-30 px-6 py-3 rounded-full">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+<i class="ri-lightbulb-line"></i>
+</div>
+<span>Critical Thinking</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20 relative">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 orbitron floating">My <span class="gradient-text">Projects</span></h2>
+<div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="card-3d project-card rounded-lg overflow-hidden card-hover glow-on-hover">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=3D%20visualization%20of%20data%20structures%20and%20algorithms%20with%20neon%20colors%2C%20abstract%20code%20visualization%2C%20algorithm%20flowchart%20with%20glowing%20nodes%20and%20connections%2C%20futuristic%20tech%20interface&width=600&height=300&seq=2&orientation=landscape" alt="CodeCraft Project" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-black px-2 py-1 rounded-full text-xs font-medium">Next.js</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-3">
+<h3 class="text-xl font-bold orbitron">CodeCraft</h3>
+<span class="text-sm text-gray-400">Mar 2025</span>
+</div>
+<p class="text-gray-300 mb-4">Developed using Next.js, the DSA and AI Algorithm Visualizer helps users understand complex concepts through interactive visualizations, enhancing learning and comprehension.</p>
+<div class="flex justify-between items-center">
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">Next.js</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">React</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">AI</span>
+</div>
+<a href="#" class="text-primary hover:underline flex items-center">
+<span class="mr-1">View</span>
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card-3d project-card rounded-lg overflow-hidden card-hover glow-on-hover">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=cybersecurity%20network%20visualization%20with%20neon%20colors%2C%20digital%20network%20security%20monitoring%20interface%2C%20network%20traffic%20analysis%20dashboard%20with%20glowing%20connections%20and%20data%20packets&width=600&height=300&seq=3&orientation=landscape" alt="Networking Tools Project" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-black px-2 py-1 rounded-full text-xs font-medium">Python</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-3">
+<h3 class="text-xl font-bold orbitron">Networking Tools</h3>
+<span class="text-sm text-gray-400">Jan 2025</span>
+</div>
+<p class="text-gray-300 mb-4">Developed using Python, this set of tools includes an Intrusion Detection System (IDS), traffic analyzer, and permission detector to enhance network security and monitoring.</p>
+<div class="flex justify-between items-center">
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">Python</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">Security</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">IDS</span>
+</div>
+<a href="#" class="text-primary hover:underline flex items-center">
+<span class="mr-1">View</span>
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card-3d project-card rounded-lg overflow-hidden card-hover glow-on-hover">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=3D%20portfolio%20website%20design%20with%20neon%20colors%2C%20modern%20web%20design%20with%20glowing%20elements%2C%20creative%20portfolio%20layout%20with%20digital%20elements%20and%20futuristic%20UI%20components&width=600&height=300&seq=4&orientation=landscape" alt="Portfolio Website Project" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-black px-2 py-1 rounded-full text-xs font-medium">HTML/CSS/JS</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-3">
+<h3 class="text-xl font-bold orbitron">Portfolio Website</h3>
+<span class="text-sm text-gray-400">April 2025</span>
+</div>
+<p class="text-gray-300 mb-4">Designed and built using HTML, CSS, and JavaScript, the portfolio website showcases personal projects, skills, and contact details with a fully responsive and user-friendly layout.</p>
+<div class="flex justify-between items-center">
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">HTML</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">CSS</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">JS</span>
+</div>
+<a href="#" class="text-primary hover:underline flex items-center">
+<span class="mr-1">View</span>
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card-3d project-card rounded-lg overflow-hidden card-hover glow-on-hover">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=AI%20chatbot%20interface%20with%20neon%20colors%2C%20futuristic%20chat%20application%20with%20glowing%20elements%2C%20website%20interaction%20bot%20with%20digital%20visualization%20of%20conversation%20flow&width=600&height=300&seq=5&orientation=landscape" alt="Chat With Website Project" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-black px-2 py-1 rounded-full text-xs font-medium">Python</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-3">
+<h3 class="text-xl font-bold orbitron">Chat With Website</h3>
+<span class="text-sm text-gray-400">Sep 2024</span>
+</div>
+<p class="text-gray-300 mb-4">Created a chatbot that can communicate with a specified URL using Python, allowing real-time interaction through a clean, responsive interface that enhances user engagement.</p>
+<div class="flex justify-between items-center">
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">Python</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">AI</span>
+<span class="px-2 py-1 bg-black bg-opacity-50 text-xs rounded-full border border-primary border-opacity-30">NLP</span>
+</div>
+<a href="#" class="text-primary hover:underline flex items-center">
+<span class="mr-1">View</span>
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 relative bg-black bg-opacity-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 orbitron">Get In <span class="text-primary neon-text">Touch</span></h2>
+<div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/2">
+<div class="bg-black bg-opacity-70 backdrop-blur-sm p-8 rounded-lg border border-primary border-opacity-20">
+<h3 class="text-2xl font-bold mb-6 orbitron">Contact <span class="text-primary">Information</span></h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+<i class="ri-map-pin-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Location</h4>
+<p class="text-gray-400">Mumbai, Maharashtra, India</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Email</h4>
+<p class="text-gray-400">antony958570@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Phone</h4>
+<p class="text-gray-400">+91 9321779172</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-medium mb-4">Follow Me</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-primary hover:text-black transition-all social-icon">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="https://github.com/Antony-009" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-primary hover:text-black transition-all social-icon">
+<i class="ri-github-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-primary hover:text-black transition-all social-icon">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-primary hover:text-black transition-all social-icon">
+<i class="ri-instagram-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-black bg-opacity-70 backdrop-blur-sm p-8 rounded-lg border border-primary border-opacity-20">
+<h3 class="text-2xl font-bold mb-6 orbitron">Send <span class="text-primary">Message</span></h3>
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block mb-2 text-sm">Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded bg-black bg-opacity-50 border-none focus:ring-2 focus:ring-primary" placeholder="Your name">
+</div>
+<div>
+<label for="email" class="block mb-2 text-sm">Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded bg-black bg-opacity-50 border-none focus:ring-2 focus:ring-primary" placeholder="Your email">
+</div>
+</div>
+<div class="mb-6">
+<label for="subject" class="block mb-2 text-sm">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 rounded bg-black bg-opacity-50 border-none focus:ring-2 focus:ring-primary" placeholder="Subject">
+</div>
+<div class="mb-6">
+<label for="message" class="block mb-2 text-sm">Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded bg-black bg-opacity-50 border-none focus:ring-2 focus:ring-primary" placeholder="Your message"></textarea>
+</div>
+<button type="submit" class="glow-button bg-primary text-black px-8 py-3 !rounded-button font-medium orbitron whitespace-nowrap">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-8 bg-black bg-opacity-80 border-t border-primary border-opacity-20">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p class="text-gray-400">&copy; 2025 Antonyraj Vedamanickam. All rights reserved.</p>
+</div>
+<div>
+<p class="text-gray-400">Designed & Built with <span class="text-primary">❤</span></p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+// Parallax effect
+window.addEventListener('scroll', function() {
+const parallaxElements = document.querySelectorAll('.parallax');
+parallaxElements.forEach(element => {
+const speed = element.dataset.speed || 0.5;
+const yPos = -(window.pageYOffset * speed);
+element.style.transform = `translateY(${yPos}px)`;
+});
+});
+// Intersection Observer for fade-in animations
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('animate-fade-in');
+}
+});
+}, {
+threshold: 0.1
+});
+document.querySelectorAll('.card-hover').forEach(el => observer.observe(el));
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+// Cursor trail effect
+const cursor = document.createElement('div');
+cursor.className = 'cursor-trail';
+document.body.appendChild(cursor);
+let mouseX = 0;
+let mouseY = 0;
+let cursorX = 0;
+let cursorY = 0;
+document.addEventListener('mousemove', (e) => {
+mouseX = e.clientX;
+mouseY = e.clientY;
+});
+function animate() {
+const dx = mouseX - cursorX;
+const dy = mouseY - cursorY;
+cursorX += dx * 0.1;
+cursorY += dy * 0.1;
+cursor.style.left = cursorX + 'px';
+cursor.style.top = cursorY + 'px';
+requestAnimationFrame(animate);
+}
+animate();
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+});
+});
+// Binary rain animation for hero section
+document.addEventListener('DOMContentLoaded', function() {
+const canvas = document.createElement('canvas');
+canvas.classList.add('binary-bg');
+document.querySelector('#home').appendChild(canvas);
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const binary = '01';
+const fontSize = 14;
+const columns = canvas.width / fontSize;
+const drops = [];
+for (let i = 0; i < columns; i++) {
+drops[i] = Math.floor(Math.random() * canvas.height / fontSize);
+}
+function draw() {
+ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = '#00ffaa';
+ctx.font = fontSize + 'px monospace';
+for (let i = 0; i < drops.length; i++) {
+const text = binary.charAt(Math.floor(Math.random() * binary.length));
+ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+drops[i] = 0;
+}
+drops[i]++;
+}
+}
+setInterval(draw, 35);
+window.addEventListener('resize', function() {
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+});
+});
+</script>
+</body>
+</html>
